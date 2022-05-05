@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--segunda-cor);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+.menu {
+    list-style: none;
+    background-color: var(--primeira-cor);
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: var(--quarta-cor);
+    transition: 0.5s;
+}
+
+.funcionario {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+  
+form input:focus {
+    outline: 1px solid var(--primera-cor);
+}
+  
+form button {
+    border: none;
+    background: var(--primeira-cor);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+  
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.caixa h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.semCadastro,
+.comCadastro{
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.semCadastro:hover, 
+.comCadastro:hover{
+    background-color: var(--quarta-cor);
+}
+
+.relatorio {
+    width: 100vw;
+    height: 100vh;
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+    z-index: 1;
+}

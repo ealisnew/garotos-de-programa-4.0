@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa</title>
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/caixa.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="" class="adicionaItem">Adicionar Item</a></li>
+                <li><a href="" class="removerItem">Remover Item</a></li>
+                <li><a href="" class="marcarConsulta">Marcar Consulta</a></li>
+                <li><a href="" class="verificarConsulta">Verificar Consulta</a></li>
+                <li><a href="" class="verificarAnimal">Verificar Animal</a></li>
+                <li><a href="" class="removerCadastro">Remover Cadastro</a></li>
+                <li><a href="" class="total">Relatorio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="caixa">
+        <div class="funcionario">
+            <h1>CAIXA</h1>
+            <form action="venda">
+                <div>
+                    <label for="items">ITEM: </label>
+                    <input autocomplete="off" list="items" id="item" name="items" placeholder="Selecione um item">
+                    <datalist id="items">
+                        <option value="Banho" class="banho"></option>
+                        <option value="Tosa" class="tosa"></option>
+                    </datalist>
+                    <label for="quantidade">QUANTIDADE: </label>
+                    <input type="number" class="quantidade" placeholder="Insira a quantidade">
+                </div>
+                <label for="preco">PREÇO: </label>
+                <input type="number" class="preco" placeholder="Insira um valor">
+                <input type="button" value="Com Cadastro" class="comCadastro">
+                <input type="button" value="Sem Cadastro" class="semCadastro">
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/validaCPF.js"></script>
+    <script src="./assets/js/caixa.js"></script>
+</body>
+
+</html>
